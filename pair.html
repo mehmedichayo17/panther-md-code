@@ -12,7 +12,7 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background: url("https://telegra.ph/file/bd51b109d281971bd3f1f.jpg"); /* set the background image */
+      background: url("https://telegra.ph/file/5a7ae6fd49410bcafe81a.jpg"); /* set the background image */
       font-family: Arial, sans-serif;
     }
 
@@ -28,7 +28,7 @@
       padding: 20px;
       position: relative;
       text-align: center;
-      background-color: Transparent
+      background-image: url("https://telegra.ph/file/2be2a434de6dd1fbd44b7.jpg"); /* set the background image */
       border-radius: 10px;
       transform: perspective(1000px) rotateY(0deg);
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
@@ -164,7 +164,7 @@
         a.innerHTML = '<a style="color: white; font-weight: bold;">Generating Code...</a><br><br>';
         let { data } = await axios(`/code?number=${bc}`);
         let code = data.code || "Service is Currently Unavailable";
-        a.innerHTML = '<font id="copy" onclick="Copy()" style="color: blue; font-weight: bold;" size="5">YOUR CODE: <span style="color: red; font-weight: bold;">' + code + '</span></font><br><br><br>';
+        a.innerHTML = '<font id="copy" onclick="Copy()" style="color: blue; font-weight: bold;" size="5">YOUR CODE: <span style="color: yellow; font-weight: bold;">' + code + '</span></font><br><br><br>';
       }
     });
   </script>
